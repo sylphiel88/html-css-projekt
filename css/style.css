@@ -1,0 +1,45 @@
+.brand-logo {
+  color : antiquewhite;
+}
+.blue {
+  background-color : rgb(0, 155, 226);
+}
+.blue2 {
+  background-color : rgb(16, 77, 105);
+}
+.all {
+  background-color: black;
+}
+.parallax-container {
+  height: 25em
+}
+
+p {
+  font-size: 2em;
+}
+
+h1 {
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+.dropdown-content > li:hover {
+  background-color: rgb(0, 155, 226);
+}
+li:hover {
+  background-color: rgb(16, 77, 105);
+}
+.dropdown-content > li > a:hover, .dropdown-menu > li > a:focus {
+  background-image:none !important;
+}
+.dropdown-content > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color:rgb(0, 155, 226);
+}
+
+.bl-sm {
+  font-size: 0.8em;
+}
+
+@media(min-width: 40em) {
+  .bl-sm {
+    font-size: 1em;
+  }
+}

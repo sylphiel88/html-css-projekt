@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- load stylesheets-->
+        <link rel="stylesheet" href="../css/materialize.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <!-- page title -->
+        <title>Janana - 54l Aquarium</title>
+    </head>
+    <!-- black background -->
+    <body class="black">
+        <!-- dropdown menu big screen -->
+        <ul id="dropdown1" class="dropdown-content blue2 white-text">
+            <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
+            <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
+            <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
+        </ul>
+        <!-- navbar responsive-->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper blue">
+                    <div class="container">
+                        <a href="#" class="brand-logo">54l Aquarium</a>
+                        <a href="#" class="sidenav-trigger left" data-target="slide-out"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown1">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+                            <li><a href="technik.html" class="white-text">Technik</a></li>
+                            <li><a href="pflanzengallerie.html" class="white-text">Pflanzengallerie</a></li>
+                            <li><a href="bewertung.html" class="white-text">Bewerten!</a></li>
+                            <li><a href="../index.html" class="white-text"><i class="material-icons right white-text">home</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- dropdown sidenav for small screens -->
+        <ul id="dropdown2" class="dropdown-content blue2 white-text">
+            <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
+            <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
+            <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
+        </ul>
+        <!-- sidenav for small screens -->
+        <ul class="sidenav blue" id="slide-out">
+            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown2">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+            <li><a href="technik.html" class="white-text">Technik</a></li>
+            <li><a href="pflanzengallerie.html " class="white-text">Pflanzengallerie</a></li>
+            <li><a href="bewertung.html" class="white-text">Bewerten!</a></li>
+            <li><a href="../index.html" class="white-text">Startseite<i class="material-icons right white-text">home</i></a></li>
+        </ul>
+        <!-- content starts here -->
+        <div class="container white-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo doloribus excepturi veritatis, nesciunt ea labore dolor, sit facere tempora itaque. Asperiores repellat laborum voluptate mollitia quia? Fuga, deserunt possimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo doloribus excepturi veritatis, nesciunt ea labore dolor, sit facere tempora itaque. Asperiores repellat laborum voluptate mollitia quia? Fuga, deserunt possimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo doloribus excepturi veritatis, nesciunt ea labore dolor, sit facere tempora itaque. Asperiores repellat laborum voluptate mollitia quia? Fuga, deserunt possimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo doloribus excepturi veritatis, nesciunt ea labore dolor, sit facere tempora itaque. Asperiores repellat laborum voluptate mollitia quia? Fuga, deserunt possimus?</p>
+        </div>
+        <!-- Footer / Impressum -->
+        <footer class="page-footer blue">
+            <div class="container">
+              <div class="row">
+                <div class="col l12 s12">
+                  <h2 class="white-text">Janana</h5>
+                  <p class="grey-text text-lighten-4"><h5>Diese Webseite ist im Zusammenhang einer Projektarbeit HTML CSS im Rahmen einer Ausbildung zum Fachinformatiker / Anwendungsentwickler entstanden</h5></p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2021 Jan Ihmels, Hellerweg 51, 73728 Esslingen &nbsp;&nbsp;| &nbsp;&nbsp; enstanden für das Berufsförderwerk Schömberg, Steinbeisstraße 30, 71272 Renningen
+              <a class="grey-text text-lighten-4 right" href="https://www.bfw-schoemberg.de">BfW Schömberg</a>
+              </div>
+            </div>
+          </footer>
+        
+        <!-- javascript starts here -->
+        <script src="../js/jquery-3.6.0.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script>
+            const slide_menu = document.querySelectorAll(".sidenav");
+            M.Sidenav.init(slide_menu, {});
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('.dropdown-trigger').dropdown();
+               });
+        </script>
+    </body>
+</html>
