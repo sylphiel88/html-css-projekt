@@ -1,4 +1,4 @@
-sudo scp -r /home/jan/html/projekt/ pi@192.168.178.12:/home/pi/html/
+sudo scp -r /home/jan/html/projekt/* pi@192.168.178.12:/home/pi/html/
 ssh pi@192.168.178.12
-sudo cp -r ~/html/html-css-projekt/ /var/www/html/
+sudo cp -r ~/html/html-css-projekt/* /var/www/html/
 exit

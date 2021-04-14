@@ -13,8 +13,10 @@
     </head>
     <!-- black background -->
     <body class="black">
+        <!-- get mysql data for  avarage and last msg -->
         <?php
-            $db1 = mysqli_connect("localhost", "pi", "ircilv", "mysql");
+            include 'afile.php';
+            $db1 = mysqli_connect("localhost", $usern, $passwd, $database);
             if(!$db1) {
                 exit("Verbindungsfehler: ".mysqli_connect_error());
             };
@@ -96,6 +98,7 @@
         </ul>
         <!-- content starts here -->
         
+        <!-- the form begins here -->
         <div class="container black white-text">
             <div class="row"></div>
             <div class="row">
@@ -104,8 +107,9 @@
                 </div>
             </div>
             <form id="myForm" name="myForm">
+                <!-- question one and output avrage of all database entries in column rating1 -->    
                 <div class="row">
-                    <div class="col s6 right-align">
+                    <div class="col s6">
                         <p class="bw">Wie gefällt Ihnen die Webseite?</p>
                     </div>
                     <div class="col s4">
@@ -117,8 +121,9 @@
                         <p class="bw" id="arating1"><?php echo $avr1 ?></p>
                     </div>
                 </div>
+                <!-- question two and output avrage of all database entries in column rating2 -->
                 <div class="row">
-                    <div class="col s6 right-align">
+                    <div class="col s6">
                         <p class="bw">Würden Sie die Seite weiterempfehlen?</p>
                     </div>
                     <div class="col s4">
@@ -130,8 +135,9 @@
                         <p class="bw" id="arating2"><?php echo $avr2 ?></p>
                     </div>
                 </div>
+                <!-- question three and output avrage of all database entries in column rating1 -->
                 <div class="row">
-                    <div class="col s6 right-align">
+                    <div class="col s6">
                         <p class="bw">Wie gefällt Ihnen das Design?</p>
                     </div>
                     <div class="col s4">
@@ -143,6 +149,7 @@
                         <p class="bw" id="arating"><?php echo $avr3 ?></p>
                     </div>
                 </div>
+                <!-- annotation msg and output of last msg -->
                 <div class="row">
                     <p class="col s12 bw">Haben Sie Anregungen? Die letzte Anwort war: <span class="blue"><?php echo $msg['anmerkung'] ?></span></p>
                 </div>
@@ -155,8 +162,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- submit button --> 
                 <div class="row">
-                    <div class="col s10 offset-s2">
+                    <div class="col s12 center-align">
                         <button class="btn waves-effect waves-light blue" type="submit" name="action" id="submit">Abschicken
                             <i class="material-icons right">send</i>
                         </button>
@@ -203,7 +211,6 @@
                 let rating2 = document.querySelector("#rating2").value;
                 let rating3 = document.querySelector("#rating3").value;
                 let msg = document.querySelector("#textarea1").value;
-                window.alert('Rating 1: ' + rating1 + ' Rating 2: ' + rating2 + ' Rating 3: ' + rating3 + '\n' + msg);
                 form = new FormData();
                 form.append("rating1", rating1);
                 form.append("rating2", rating2);
@@ -213,7 +220,7 @@
             })
         </script>
         <?php
-            $db2 = mysqli_connect("localhost", "pi", "ircilv", "mysql");
+            $db2 = mysqli_connect("localhost", $usern, $passwd, $database);
             if(!$db2) {
                 exit("Verbindungsfehler: ".mysqli_connect_error());
             };
