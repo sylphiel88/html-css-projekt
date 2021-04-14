@@ -194,17 +194,21 @@
           </footer>
         
         <!-- javascript starts here -->
+        <!-- import jQuery and MaterializeJS -->
         <script src="../js/jquery-3.6.0.js"></script>
         <script src="../js/materialize.js"></script>
+        <!-- initialise sidenav -->
         <script>
             const slide_menu = document.querySelectorAll(".sidenav");
             M.Sidenav.init(slide_menu, {});
         </script>
+        <!-- initialise dropdown menu via jQuery -->
         <script>
             $(document).ready(function(){
                 $('.dropdown-trigger').dropdown();
             });
         </script>
+        <!-- submit form javascript part -->
         <script>
             myForm.addEventListener('submit', (event) => {
                 let rating1 = document.querySelector("#rating1").value;
@@ -217,8 +221,9 @@
                 form.append("rating3", rating3);
                 form.append("msg", msg);
                 fetch('bewertung.php', {method: 'POST', body: form});
-            })
+            });
         </script>
+        <!-- and php part plus write data in mysql -->
         <?php
             $db2 = mysqli_connect("localhost", $usern, $passwd, $database);
             if(!$db2) {
@@ -243,7 +248,6 @@
             mysqli_query($db3, $eintrag2);
             mysqli_close($db3);
             $db3=null;
-
         ?>
     </body>
 </html>
