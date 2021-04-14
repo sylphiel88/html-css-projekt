@@ -13,6 +13,49 @@
     </head>
     <!-- black background -->
     <body class="black">
+        <?php
+            $db1 = mysqli_connect("localhost", "pi", "ircilv", "mysql");
+            if(!$db1) {
+                exit("Verbindungsfehler: ".mysqli_connect_error());
+            };
+            $abfrage = "SELECT SUM(`rating1`) AS `value_sum` FROM `bewertungergebnisse`";
+            $ergebnis = mysqli_query($db1, $abfrage);
+            $daten = mysqli_fetch_assoc($ergebnis);
+            $sumr1 = $daten['value_sum'];
+            $abfrage2 = "SELECT COUNT(`rating1`) AS `anz_daten` FROM `bewertungergebnisse`";
+            $ergebnis2 = mysqli_query($db1, $abfrage2);
+            $daten2 = mysqli_fetch_assoc($ergebnis2);
+            $anzr1 = $daten2['anz_daten'];
+            $avr = $sumr1 / $anzr1;
+            $avr1 = round($avr, 1);
+            
+            $abfrage = "SELECT SUM(`rating2`) AS `value_sum` FROM `bewertungergebnisse`";
+            $ergebnis = mysqli_query($db1, $abfrage);
+            $daten = mysqli_fetch_assoc($ergebnis);
+            $sumr2 = $daten['value_sum'];
+            $abfrage2 = "SELECT COUNT(`rating2`) AS `anz_daten` FROM `bewertungergebnisse`";
+            $ergebnis2 = mysqli_query($db1, $abfrage2);
+            $daten2 = mysqli_fetch_assoc($ergebnis2);
+            $anzr2 = $daten2['anz_daten'];
+            $avr = $sumr2 / $anzr2;
+            $avr2 = round($avr, 1);
+
+            $abfrage = "SELECT SUM(`rating3`) AS `value_sum` FROM `bewertungergebnisse`";
+            $ergebnis = mysqli_query($db1, $abfrage);
+            $daten = mysqli_fetch_assoc($ergebnis);
+            $sumr3 = $daten['value_sum'];
+            $abfrage2 = "SELECT COUNT(`rating3`) AS `anz_daten` FROM `bewertungergebnisse`";
+            $ergebnis2 = mysqli_query($db1, $abfrage2);
+            $daten2 = mysqli_fetch_assoc($ergebnis2);
+            $anzr3 = $daten2['anz_daten'];
+            $avr = $sumr3 / $anzr3;
+            $avr3 = round($avr, 1);
+
+            $abfrage = "SELECT `anmerkung` FROM `bewertungergebnisse` ORDER BY `id` DESC LIMIT 1";
+            $ergebnis = mysqli_query($db1, $abfrage);
+            $daten = mysqli_fetch_assoc($ergebnis);
+            $msg = $daten;
+        ?>
         <!-- dropdown menu big screen -->
         <ul id="dropdown1" class="dropdown-content blue2 white-text">
             <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
@@ -71,7 +114,7 @@
                         </p>
                     </div>
                     <div class="col s2">
-                        <p class="bw" id="arating1">1.5</p>
+                        <p class="bw" id="arating1"><?php echo $avr1 ?></p>
                     </div>
                 </div>
                 <div class="row">
@@ -84,7 +127,7 @@
                         </p>
                     </div>
                     <div class="col s2">
-                        <p class="bw" id="arating2">2.4</p>
+                        <p class="bw" id="arating2"><?php echo $avr2 ?></p>
                     </div>
                 </div>
                 <div class="row">
@@ -97,11 +140,11 @@
                         </p>
                     </div>
                     <div class="col s2">
-                        <p class="bw" id="arating">2.3</p>
+                        <p class="bw" id="arating"><?php echo $avr3 ?></p>
                     </div>
                 </div>
                 <div class="row">
-                    <p class="col s6 bw right-align">Haben Sie Anregungen?</p>
+                    <p class="col s12 bw">Haben Sie Anregungen? Die letzte Anwort war: <span class="blue"><?php echo $msg['anmerkung'] ?></span></p>
                 </div>
 
                 <div class="row">
@@ -152,20 +195,48 @@
         <script>
             $(document).ready(function(){
                 $('.dropdown-trigger').dropdown();
-               });
+            });
         </script>
-        <script src="../js/submit.js"></script>
+        <script>
+            myForm.addEventListener('submit', (event) => {
+                let rating1 = document.querySelector("#rating1").value;
+                let rating2 = document.querySelector("#rating2").value;
+                let rating3 = document.querySelector("#rating3").value;
+                let msg = document.querySelector("#textarea1").value;
+                window.alert('Rating 1: ' + rating1 + ' Rating 2: ' + rating2 + ' Rating 3: ' + rating3 + '\n' + msg);
+                form = new FormData();
+                form.append("rating1", rating1);
+                form.append("rating2", rating2);
+                form.append("rating3", rating3);
+                form.append("msg", msg);
+                fetch('bewertung.php', {method: 'POST', body: form});
+            })
+        </script>
         <?php
+            $db2 = mysqli_connect("localhost", "pi", "ircilv", "mysql");
+            if(!$db2) {
+                exit("Verbindungsfehler: ".mysqli_connect_error());
+            };
             $r1 = $_POST["rating1"];
             $r2 = $_POST["rating2"];
             $r3 = $_POST["rating3"];
             $msg = $_POST["msg"];
-            $db = mysqli_connect("localhost", "pi", "ircilv", "mysql");
-            if(!$db) {
+            if(!$db2) {
                 exit("Verbindungsfehler: ".mysqli_connect_error());
             };
-            $eintrag = "INSERT INTO bewertungergebnisse (rating1, rating2, rating3, anmerkung) VALUES ('$r1', '$r2', '$r3', '$msg')";
-            $eintragen = mysqli_query($db, $eintrag);
+            $eintrag = "INSERT INTO `bewertungergebnisse` (`rating1`, `rating2`, `rating3`, `anmerkung`) VALUES ('$r1', '$r2', '$r3', '$msg')";
+            $eintragen = mysqli_query($db2, $eintrag);
+            mysqli_close($db2);
+            $db2=null;
+            $db3 = mysqli_connect("localhost", "pi", "ircilv", "mysql");
+            if(!$db3) {
+                exit("Verbindungsfehler: ".mysqli_connect_error());
+            };
+            $eintrag2 = "DELETE FROM `bewertungergebnisse` WHERE `rating1` = 0";
+            mysqli_query($db3, $eintrag2);
+            mysqli_close($db3);
+            $db3=null;
+
         ?>
     </body>
 </html>
