@@ -98,6 +98,17 @@ input[type=range]+.thumb{
   margin-bottom: 3em;
 }
 
+.lb-image, .lb-dataContainer {
+  max-width: 100%;
+  height: auto !important;
+  width: 100%;
+ }
+ 
+ .lb-outerContainer {
+  max-width: 100%;
+  height: auto !important;
+ }
+
 @media(min-width: 35em) {
   .bl-sm {
     font-size: 1em;
