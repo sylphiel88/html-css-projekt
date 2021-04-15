@@ -74,7 +74,17 @@ input[type=range]+.thumb{
   padding-bottom: 10%;
 }
 
-@media(min-width: 40em) {
+.imgcenter {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cardtextsize {
+  font-size: 0.75em;
+}
+
+@media(min-width: 35em) {
   .bl-sm {
     font-size: 1em;
   }
@@ -84,5 +94,28 @@ input[type=range]+.thumb{
     overflow: hidden;
     border: none;
   }
+  .cardtextsize {
+    font-size: 1.2em;
+  }
 }
 
+@media(min-width: 50em) {
+  .bl-sm {
+    font-size: 1em;
+  }
+  .cropped {
+    height: 20vw;
+    width: 20vw;
+    overflow: hidden;
+    border: none;
+  }
+  .cardtextsize {
+    font-size: 1.5em;
+  }
+}
+
+@media(min-width: 80em) {
+  .cardtextsize {
+    font-size: 2.15em;
+  }
+}
