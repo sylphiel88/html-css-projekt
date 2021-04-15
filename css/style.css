@@ -84,6 +84,12 @@ input[type=range]+.thumb{
   font-size: 0.75em;
 }
 
+.centert {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @media(min-width: 35em) {
   .bl-sm {
     font-size: 1em;
