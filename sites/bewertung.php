@@ -115,7 +115,7 @@
                     </div>
                     <div class="col s4">
                         <p class="range-field bw">
-                            <input type="range" id="rating1" min="0" max="10" />
+                            <input type="range" id="rating1" min="1" max="10" />
                         </p>
                     </div>
                     <div class="col s2">
@@ -129,7 +129,7 @@
                     </div>
                     <div class="col s4">
                         <p class="range-field bw">
-                            <input type="range" id="rating2" min="0" max="10" />
+                            <input type="range" id="rating2" min="1" max="10" />
                         </p>
                     </div>
                     <div class="col s2">
@@ -143,7 +143,7 @@
                     </div>
                     <div class="col s4">
                         <p class="range-field bw">
-                            <input type="range" id="rating3" min="0" max="10" />
+                            <input type="range" id="rating3" min="1" max="10" />
                         </p>
                     </div>
                     <div class="col s2">
