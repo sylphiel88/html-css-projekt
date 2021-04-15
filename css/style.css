@@ -85,9 +85,17 @@ input[type=range]+.thumb{
 }
 
 .centert {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: flex !important; 
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+.pfl-nm {
+  font-style: italic;
+}
+
+.aq1 {
+  margin-bottom: 3em;
 }
 
 @media(min-width: 35em) {
