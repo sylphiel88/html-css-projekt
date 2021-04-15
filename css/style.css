@@ -63,10 +63,26 @@ input[type=range]+.thumb{
   box-shadow: 0 1px 0 0 rgb(0, 155, 226) !important;
 }
 
+.cropped {
+  position: relative;
+  width: 50%;
+}
 
+.cropped:after {
+  content: "";
+  display: block;
+  padding-bottom: 10%;
+}
 
 @media(min-width: 40em) {
   .bl-sm {
     font-size: 1em;
   }
+  .cropped {
+    height: 20vw;
+    width: 20vw;
+    overflow: hidden;
+    border: none;
+  }
 }
+
