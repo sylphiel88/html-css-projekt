@@ -245,7 +245,7 @@
             if(!$db3) {
                 exit("Verbindungsfehler: ".mysqli_connect_error());
             };
-            $eintrag2 = "DELETE FROM `bewertungergebnisse` WHERE `rating1` = 0";
+            $eintrag2 = "DELETE FROM `bewertungergebnisse` WHERE `rating1` = 0 AND `rating2` = 0 AND `rating3` = 0";
             mysqli_query($db3, $eintrag2);
             mysqli_close($db3);
             $db3=null;
