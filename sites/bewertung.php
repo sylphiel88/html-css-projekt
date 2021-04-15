@@ -77,7 +77,7 @@
                             <li><a href="technik.html" class="white-text">Technik</a></li>
                             <li><a href="pflanzengallerie.html" class="white-text">Pflanzengallerie</a></li>
                             <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
-                            <li><a href="../index.html" class="white-text"><i class="material-icons right white-text">home</i></a></li>
+                            <li><a href="../index.html" class="white-text"><i class="material-icons center white-text">home</i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
             <li><a href="technik.html" class="white-text">Technik</a></li>
             <li><a href="pflanzengallerie.html " class="white-text">Pflanzengallerie</a></li>
             <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
-            <li><a href="../index.html" class="white-text">Startseite<i class="material-icons right white-text">home</i></a></li>
+            <li><a href="../index.html" class="white-text">Startseite<i class="material-icons center white-text">home</i></a></li>
         </ul>
         <!-- content starts here -->
         
