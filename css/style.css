@@ -114,7 +114,7 @@ input[type=range]+.thumb{
  }
 
  .technik-container {
-   height: 140vh;
+   height: 140vh !important;
 }
 
 
@@ -127,6 +127,25 @@ input[type=range]+.thumb{
   left: 20%;
   top: 20%;
   z-index: 6;
+  display: none;
+}
+
+.technik-p {
+  margin: 3px;
+}
+
+.technik-text-1 {
+  left: 20%;
+  top: 20%
+}
+
+.btn-small {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+i.resp-icon {
+  color:rgb(0, 155, 226);
 }
 
 .technik-btn-1 {
@@ -135,17 +154,10 @@ input[type=range]+.thumb{
   left: 0%;
 }
 
-.technik-1 {
-  display: none;
-}
-.technik-btn-1:hover + .technik-1 {
+
+.technik-btn-1:hover + .technik-text {
   display: block;
   position: absolute;
- }
-
- .technik-text-1 {
-   left: 20%;
-   top: 20%
  }
 
 
@@ -155,11 +167,117 @@ input[type=range]+.thumb{
   left: 15%;
 }
 
-.technik-2 {
-  display: none;
+.technik-btn-2:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-3 {
+  position: absolute;
+  top: 68%;
+  left: 30%;
 }
 
-.technik-btn-2:hover + .technik-2 {
+.technik-btn-3:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-4 {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+}
+
+
+.technik-btn-4:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+ .technik-btn-5 {
+  position: absolute;
+  top: 82%;
+  left: 30%;
+}
+
+.technik-btn-5:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-6 {
+  position: absolute;
+  top: 12%;
+  left: 0%;
+}
+
+.technik-btn-6:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-7 {
+  position: absolute;
+  top: 19%;
+  left: 0%;
+}
+
+.technik-btn-7:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+ 
+ .technik-btn-8 {
+  position: absolute;
+  top: 11%;
+  left: 32%;
+}
+
+.technik-btn-8:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-9 {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+}
+
+.technik-btn-9:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-10 {
+  position: absolute;
+  top: 1%;
+  left: 45%;
+}
+
+.technik-btn-10:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-11 {
+  position: absolute;
+  top: 40%;
+  left: 84%;
+}
+
+.technik-btn-11:hover + .technik-text {
+  display: block;
+  position: absolute;
+ }
+
+ .technik-btn-12 {
+  position: absolute;
+  top: 48%;
+  left: 74%;
+}
+
+.technik-btn-12:hover + .technik-text {
   display: block;
   position: absolute;
  }
@@ -184,6 +302,10 @@ input[type=range]+.thumb{
   .cardtextsize {
     font-size: 1.2em;
   }
+  .btn-small {
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
 
 @media(min-width: 50em) {
@@ -198,6 +320,14 @@ input[type=range]+.thumb{
   }
   .cardtextsize {
     font-size: 1.5em;
+  }
+  .btn-small {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  i.resp-icon {
+    color:rgb(255, 255, 255);
   }
 }
 
