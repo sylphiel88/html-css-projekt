@@ -104,7 +104,9 @@
             <div class="row"></div>
             <div class="row">
                 <div class="col s2 offset-s10">
-                    <span class="bw">Ø</span>
+                    <div class="valign-wrapper center-align">
+                        <span class="bw">Ø</span>
+                    </div>
                 </div>
             </div>
             <form id="myForm" name="myForm">
