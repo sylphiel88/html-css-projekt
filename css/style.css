@@ -1,3 +1,6 @@
+ *{
+  font-family: 'Baumans', cursive;
+ }
 .brand-logo {
   color : antiquewhite;
 }
@@ -13,7 +16,9 @@
 .parallax-container {
   height: 25em
 }
-
+.demo {
+  height: 62vh !important;
+}
 .normalertext {
   font-size: 2em;
 }
@@ -128,10 +133,16 @@ input[type=range]+.thumb{
   top: 14%;
   z-index: 6;
   display: none;
+  font-size: 0.8em;
 }
 
 .technik-p {
   margin: 3px;
+  font-size: 1.4em;
+}
+
+p.technik-p {
+  font-size: 1em;
 }
 
 .btn-small {
@@ -283,7 +294,16 @@ i.resp-icon {
   bottom: 0;
   width: 100%;
 }
- 
+
+.page-footer {
+  font-size: 0.7em;
+}
+h5.footer-1 {
+  font-size: 1em;
+}
+h2.footer-1 {
+  font-size: 1.3em
+}
 @media(min-width: 35em) {
   .bl-sm {
     font-size: 1em;
@@ -323,6 +343,24 @@ i.resp-icon {
 
   i.resp-icon {
     color:rgb(255, 255, 255);
+  }
+
+  .technik-p {
+    margin: 3px;
+    font-size: 1.8em;
+  }
+  
+  p.technik-p {
+    font-size: 1.4em;
+  }
+  .page-footer {
+    font-size: 1em;
+  }
+  h5.footer-1 {
+    font-size: 1.5em;
+  }
+  h2.footer-1 {
+    font-size: 2em
   }
 }
 

@@ -1,0 +1,88 @@
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- load stylesheets-->        
+        <link rel="stylesheet" href="css/materialize.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="shortcut icon" href="pics/banana.ico" />
+<!-- page title -->
+        <title>Janana - Meine Aquarien</title>
+    </head>
+<!-- black background -->
+    <body class="black">
+<!-- dropdown menu for navbar-->
+        <ul id="dropdown1" class="dropdown-content blue2 white-text">
+            <li><a href="sites/aquarium1.html" class="white-text">54l Aquarium</a></li>
+            <li><a href="sites/aquarium2.html" class="white-text">180l Aquarium</a></li>
+            <li><a href="sites/aquarium3.html" class="white-text">12l Aquarium</a></li>
+        </ul>
+<!-- fixed navbar (always on top) -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper blue">
+                    <div class="container">
+                        <a href="#" class="brand-logo">Janana</a>
+                        <a href="#" class="sidenav-trigger left" data-target="slide-out"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown1">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+                            <li><a href="sites/technik.html" class="white-text">Technik</a></li>
+                            <li><a href="sites/pflanzengallerie.html" class="white-text">Pflanzengallerie</a></li>
+                            <li><a href="sites/bewertung.php" class="white-text">Bewerten!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div> 
+<!-- dropdown menu sidebar -->
+        <ul id="dropdown2" class="dropdown-content blue2 white-text">
+            <li><a href="sites/aquarium1.html" class="white-text">54l Aquarium</a></li>
+            <li><a href="sites/aquarium2.html" class="white-text">180l Aquarium</a></li>
+            <li><a href="sites/aquarium3.html" class="white-text">12l Aquarium</a></li>
+        </ul>
+<!-- sidebar for smaller screens -->
+        <ul class="sidenav blue" id="slide-out">
+            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown2">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+            <li><a href="sites/technik.html" class="white-text">Technik</a></li>
+            <li><a href="sites/pflanzengallerie.html " class="white-text">Pflanzengallerie</a></li>
+            <li><a href="sites/bewertung.php" class="white-text">Bewerten!</a></li>
+        </ul>
+        <p class="demo"></p>
+        <footer class="page-footer blue">
+            <div class="container">
+              <div class="row">
+                <div class="col l12 s12">
+                  <h2 class="white-text">Janana</h5>
+                  <p class="grey-text text-lighten-4"><h5>Diese Webseite ist im Zusammenhang einer Projektarbeit HTML CSS im Rahmen einer Ausbildung zum Fachinformatiker / Anwendungsentwickler entstanden</h5></p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2021 Jan Ihmels, Hellerweg 51, 73728 Esslingen &nbsp;&nbsp;| &nbsp;&nbsp; enstanden für das Berufsförderwerk Schömberg, Steinbeisstraße 30, 71272 Renningen
+                <a class="grey-text text-lighten-4 right" href="https://www.bfw-schoemberg.de">BfW Schömberg</a>
+            </div>
+            </div>
+          </footer>
+          
+              
+<!-- java script starts here -->
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            const slide_menu = document.querySelectorAll(".sidenav");
+            M.Sidenav.init(slide_menu, {});
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('.dropdown-trigger').dropdown();
+                $('.parallax').parallax();
+               });
+        </script>
+    </body>
+</html>
