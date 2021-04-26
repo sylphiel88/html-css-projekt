@@ -116,10 +116,16 @@
         <script>
             $(document).ready(function(){
                 $('.dropdown-trigger').dropdown();
-                $('[data-fancybox="gallery"]').fancybox({
-                    loop    :true,
+                $('[data-fancybox]').fancybox({
+                    arrows   : false,
+                    loop     : true,
+                    toolbar: false,
+  //preventCaptionOverlap : false,
+                    afterLoad : function(instance, slide) {
+                        $('<a title="Close" class="fancybox-item fancybox-close" href="javascript:;" data-fancybox-close></a><a title="Previous" class="fancybox-item fancybox-nav fancybox-prev" href="javascript:;" data-fancybox-prev><span></span></a><a title="Next" class="fancybox-item fancybox-nav fancybox-next" href="javascript:;" data-fancybox-next><span></span></a>').appendTo( slide.$content );
+                    }
+                    });
                 });
-               });
         </script>
     </body>
 </html>
