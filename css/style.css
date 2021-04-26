@@ -123,6 +123,7 @@ input[type=range]+.thumb{
 
 .fancybox-prev span, .fancybox-next span {
   background-image : url(../pics/fancybox_sprite.png);
+  opacity: 50%;
 }
 
 .fancybox-prev span {
@@ -146,6 +147,7 @@ input[type=range]+.thumb{
   width: 36px;
   height: 36px;
   background-image: url(../pics/fancybox_sprite.png);
+  opacity: 50%;
   z-index: 2;
 }
 
