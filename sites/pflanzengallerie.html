@@ -5,11 +5,12 @@
         <meta http-equiv="X-UA-Compatible" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- load stylesheets-->
-        <link rel="stylesheet" href="../css/lightbox.css" />
+        <!--<link rel="stylesheet" href="../css/lightbox.css" /> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="../css/materialize.min.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <link rel="shortcut icon" href="../pics/banana.ico" />
@@ -61,39 +62,18 @@
         <div class=container>
             <div class="row"></div>
             <div class="row"><p class="logo-text">Bilder geschossen von ©Adrian Berny<a href="https://www.facebook.com/anb_bandphotography-2381502605462318"><i><img src="../pics/f_logo_RGB-White_114.png" class="logos" /></i></a><a href="https://www.instagram.com/anb_photographics/"><img src="../pics/Instagram_glyph.png" class="logos" /></a></p></div>
-            <div class="row">
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/12l-gallery.jpg" data-lightbox="plants"><img src="../pics/12l-gallery.jpg" class="responsive-img" /></a>
-                </div>
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/180l-gallery.jpg" data-lightbox="plants"><img src="../pics/180l-gallery.jpg" class="responsive-img"/></a>
-                </div>
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/54l-gallery.jpg" data-lightbox="plants"><img src="../pics/54l-gallery.jpg" class="responsive-img"/></a>
-                </div> 
+            <div class="row gallery">
+                <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants" data-caption="Aquarium 12l"><img src="../pics/12l-gallery.jpg"/></a>
+                <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img src="../pics/180l-gallery.jpg"></a>
+                <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img src="../pics/54l-gallery.jpg"/></a>
+                <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants"><img src="../pics/12l-gallery.jpg"/></a>
+                <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img src="../pics/180l-gallery.jpg"/></a>
+                <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img src="../pics/54l-gallery.jpg"></a>
+                <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants"><img src="../pics/12l-gallery.jpg"/></a>
+                <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img src="../pics/180l-gallery.jpg"/></a>
+                <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img src="../pics/54l-gallery.jpg"/></a> 
             </div>
-            <div class="row">
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/12l-gallery.jpg" data-lightbox="plants"><img src="../pics/12l-gallery.jpg" class="responsive-img"/></a>
-                </div>
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/180l-gallery.jpg" data-lightbox="plants"><img src="../pics/180l-gallery.jpg" class="responsive-img"/></a>
-                </div>
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/54l-gallery.jpg" data-lightbox="plants"><img src="../pics/54l-gallery.jpg" class="responsive-img"/></a>
-                </div> 
-            </div>
-            <div class="row">
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/12l-gallery.jpg" data-lightbox="plants"><img src="../pics/12l-gallery.jpg" class="responsive-img"/></a>
-                </div>
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/180l-gallery.jpg" data-lightbox="plants"><img src="../pics/180l-gallery.jpg" class="responsive-img"/></a>
-                </div>
-                <div class="col s12 m4 cropped">
-                    <a href="../pics/54l-gallery.jpg" data-lightbox="plants"><img src="../pics/54l-gallery.jpg" class="responsive-img"/></a>
-                </div> 
-            </div>
+            <div class="row"></div>
         </div>
         
 
@@ -117,25 +97,28 @@
                 
         <!-- javascript starts here -->
         <script src="../js/jquery-3.6.0.js"></script>
-        <script src="../js/lightbox.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!--<script src="../js/lightbox.js"></script>-->
         <script src="../js/materialize.js"></script>
         <script>
             const slide_menu = document.querySelectorAll(".sidenav");
-            const gallery = document.querySelectorAll(".materialboxed");
             M.Sidenav.init(slide_menu, {});
-            M.Materialbox.init(gallery, {});
+           
         </script>
-        <script>
+    <!--    <script>
             lightbox.option({
                 'alwaysShowNavOnTouchDevices': true,
                 'albumLabel': "Bild %1 von %2",
                 'disableScrolling': true,
                 'wrapAround': true
             })
-        </script>
+        </script> -->
         <script>
             $(document).ready(function(){
                 $('.dropdown-trigger').dropdown();
+                $('[data-fancybox="gallery"]').fancybox({
+                    loop    :true,
+                });
                });
         </script>
     </body>

@@ -78,10 +78,25 @@ input[type=range]+.thumb{
   width: 50%;
 }
 
+.gallery {
+  width : 80%;
+  margin: 0 auto;
+}
+
+.gallery a img {
+  width: 100%;
+}
+
+.gallery a {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  border: none;
+}
+
 .cropped:after {
   content: "";
   display: block;
-  padding-bottom: 10%;
 }
 
 .imgcenter {  /* Zentriert die Bilder der Aquariumcards */
@@ -330,6 +345,12 @@ h2.footer-1 {
     width: 20px !important;
     height: 20px !important;
   }
+  .gallery a {
+    width: 20vh;
+    height: 20vh;
+    float: left;
+    overflow: hidden;
+  }  
 }
 
 @media(min-width: 50em) {
@@ -364,12 +385,23 @@ h2.footer-1 {
   h2.footer-1 {
     font-size: 2em
   }
+  .gallery a {
+    width: 32%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+  }  
 }
 
 @media(min-width: 80em) {
   .cardtextsize { /*noch größerer Kartentext */
     font-size: 2.15em;
   }
+  .gallery a {
+    width: 24%;
+    float: left;
+    margin: 2px;
+  }  
 }
 @media(min-width: 93em) { /*Die Technik Infoboxen gehen bei ausreichender Breite statt innerhalb der Schematischen Darstellung nach Rechts davon */
   .technik-text {
