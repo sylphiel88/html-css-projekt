@@ -1,110 +1,136 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- load stylesheets-->
-        <!--<link rel="stylesheet" href="../css/lightbox.css" /> -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <link rel="stylesheet" href="../css/materialize.min.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-        <link rel="shortcut icon" href="../pics/banana.ico" />
-        <!-- page title -->
-        <title>Janana - Gallerie</title>
-    </head>
-    <!-- black background -->
-    <body class="black">
-        <!-- dropdown menu big screen -->
-        <ul id="dropdown1" class="dropdown-content blue2 white-text">
-            <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
-            <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
-            <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
-        </ul>
-        <!-- navbar responsive-->
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper blue">
-                    <div class="container">
-                        <a href="#" class="brand-logo">Gallerie</a>
-                        <a href="#" class="sidenav-trigger left" data-target="slide-out"><i class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown1">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
-                            <li><a href="technik.html" class="white-text">Technik</a></li>
-                            <li><a href="pflanzengallerie.html" class="white-text">Gallerie</a></li>
-                            <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
-                            <li><a href="../index.html" class="white-text"><i class="material-icons center white-text">home</i></a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- load stylesheets-->
+    <!--<link rel="stylesheet" href="../css/lightbox.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../css/materialize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="shortcut icon" href="../pics/banana.ico" />
+    <!-- page title -->
+    <title>Janana - Gallerie</title>
+</head>
+<!-- black background -->
+
+<body class="black">
+    <!-- dropdown menu big screen -->
+    <ul id="dropdown1" class="dropdown-content blue2 white-text">
+        <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
+        <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
+        <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
+    </ul>
+    <!-- navbar responsive-->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue">
+                <div class="container">
+                    <a href="#" class="brand-logo">Gallerie</a>
+                    <a href="#" class="sidenav-trigger left" data-target="slide-out"><i
+                            class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown1">Aquarien<i
+                                    class="material-icons right white-text">arrow_drop_down</i></a></li>
+                        <li><a href="technik.html" class="white-text">Technik</a></li>
+                        <li><a href="pflanzengallerie.html" class="white-text">Gallerie</a></li>
+                        <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
+                        <li><a href="../index.html" class="white-text"><i
+                                    class="material-icons center white-text">home</i></a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-        <!-- dropdown sidenav for small screens -->
-        <ul id="dropdown2" class="dropdown-content blue2 white-text">
-            <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
-            <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
-            <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
-        </ul>
-        <!-- sidenav for small screens -->
-        <ul class="sidenav blue" id="slide-out">
-            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown2">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
-            <li><a href="technik.html" class="white-text">Technik</a></li>
-            <li><a href="pflanzengallerie.html " class="white-text">Gallerie</a></li>
-            <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
-            <li><a href="../index.html" class="white-text">Startseite<i class="material-icons center white-text">home</i></a></li>
-        </ul>
-        <!-- content starts here -->
-
-        <div class=container>
-            <div class="row"></div>
-            <div class="row"><p class="logo-text">Bilder geschossen von ©Adrian Berny<a href="https://www.facebook.com/anb_bandphotography-2381502605462318"><i><img src="../pics/f_logo_RGB-White_114.png" class="logos" /></i></a><a href="https://www.instagram.com/anb_photographics/"><img src="../pics/Instagram_glyph.png" class="logos" /></a></p></div>
-            <div class="row gallery">
-                <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants" data-caption="Aquarium 12l"><img src="../pics/12l-gallery.jpg"/></a>
-                <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img src="../pics/180l-gallery.jpg"></a>
-                <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img src="../pics/54l-gallery.jpg"/></a>
-                <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants"><img src="../pics/12l-gallery.jpg"/></a>
-                <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img src="../pics/180l-gallery.jpg"/></a>
-                <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img src="../pics/54l-gallery.jpg"></a>
-                <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants"><img src="../pics/12l-gallery.jpg"/></a>
-                <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img src="../pics/180l-gallery.jpg"/></a>
-                <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img src="../pics/54l-gallery.jpg"/></a> 
             </div>
-            <div class="row"></div>
-        </div>
-        
+        </nav>
+    </div>
+    <!-- dropdown sidenav for small screens -->
+    <ul id="dropdown2" class="dropdown-content blue2 white-text">
+        <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
+        <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
+        <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
+    </ul>
+    <!-- sidenav for small screens -->
+    <ul class="sidenav blue" id="slide-out">
+        <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown2">Aquarien<i
+                    class="material-icons right white-text">arrow_drop_down</i></a></li>
+        <li><a href="technik.html" class="white-text">Technik</a></li>
+        <li><a href="pflanzengallerie.html " class="white-text">Gallerie</a></li>
+        <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
+        <li><a href="../index.html" class="white-text">Startseite<i
+                    class="material-icons center white-text">home</i></a></li>
+    </ul>
+    <!-- content starts here -->
 
-        <!-- Footer / Impressum -->
-        <footer class="page-footer blue">
-            <div class="container">
-              <div class="row">
+    <div class=container>
+        <div class="row"></div>
+        <div class="row">
+            <p class="logo-text">Bilder geschossen von ©Adrian Berny<a
+                    href="https://www.facebook.com/anb_bandphotography-2381502605462318"><i><img
+                            src="../pics/f_logo_RGB-White_114.png" class="logos" /></i></a><a
+                    href="https://www.instagram.com/anb_photographics/"><img src="../pics/Instagram_glyph.png"
+                        class="logos" /></a></p>
+        </div>
+        <div class="row gallery">
+            <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants"
+                data-caption="Aquarium 12l"><img src="../pics/12l-gallery.jpg" /></a>
+            <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/180l-gallery.jpg"></a>
+            <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/54l-gallery.jpg" /></a>
+            <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/12l-gallery.jpg" /></a>
+            <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/180l-gallery.jpg" /></a>
+            <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/54l-gallery.jpg"></a>
+            <a class="grouped_elements" href="../pics/12l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/12l-gallery.jpg" /></a>
+            <a class="grouped_elements" href="../pics/180l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/180l-gallery.jpg" /></a>
+            <a class="grouped_elements" href="../pics/54l-gallery.jpg" data-fancybox="plants"><img
+                    src="../pics/54l-gallery.jpg" /></a>
+        </div>
+        <div class="row"></div>
+    </div>
+
+
+    <!-- Footer / Impressum -->
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
                 <div class="col l12 s12">
-                  <h2 class="white-text footer-1">Janana</h2>
-                  <p class="grey-text text-lighten-4"><h5 class="footer-1">Diese Webseite ist im Zusammenhang einer Projektarbeit HTML CSS im Rahmen einer Ausbildung zum Fachinformatiker / Anwendungsentwickler entstanden</h5></p>
+                    <h2 class="white-text footer-1">Janana</h2>
+                    <p class="grey-text text-lighten-4">
+                    <h5 class="footer-1">Diese Webseite ist im Zusammenhang einer Projektarbeit HTML CSS im Rahmen einer
+                        Ausbildung zum Fachinformatiker / Anwendungsentwickler entstanden</h5>
+                    </p>
                 </div>
-              </div>
             </div>
-            <div class="footer-copyright">
-              <div class="container">
-              © 2021 Jan Ihmels, Hellerweg 51, 73728 Esslingen &nbsp;&nbsp;| &nbsp;&nbsp; enstanden für das Berufsförderwerk Schömberg, Steinbeisstraße 30, 71272 Renningen
-              <a class="grey-text text-lighten-4 right" href="https://www.bfw-schoemberg.de">BfW Schömberg</a>
-              </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Jan Ihmels, Hellerweg 51, 73728 Esslingen &nbsp;&nbsp;| &nbsp;&nbsp; enstanden für das
+                Berufsförderwerk Schömberg, Steinbeisstraße 30, 71272 Renningen
+                <a class="grey-text text-lighten-4 right" href="https://www.bfw-schoemberg.de">BfW Schömberg</a>
             </div>
-          </footer>
-                
-        <!-- javascript starts here -->
-        <script src="../js/jquery-3.6.0.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <!--<script src="../js/lightbox.js"></script>-->
-        <script src="../js/materialize.js"></script>
-        <script>
-            const slide_menu = document.querySelectorAll(".sidenav");
-            M.Sidenav.init(slide_menu, {});
-           
-        </script>
+        </div>
+    </footer>
+
+    <!-- javascript starts here -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!--<script src="../js/lightbox.js"></script>-->
+    <script src="../js/materialize.js"></script>
+    <script>
+        const slide_menu = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(slide_menu, {});
+
+    </script>
     <!--    <script>
             lightbox.option({
                 'alwaysShowNavOnTouchDevices': true,
@@ -113,19 +139,20 @@
                 'wrapAround': true
             })
         </script> -->
-        <script>
-            $(document).ready(function(){
-                $('.dropdown-trigger').dropdown();
-                $('[data-fancybox]').fancybox({
-                    arrows   : false,
-                    loop     : true,
-                    toolbar: false,
-  //preventCaptionOverlap : false,
-                    afterLoad : function(instance, slide) {
-                        $('<a title="Close" class="fancybox-item fancybox-close" href="javascript:;" data-fancybox-close></a><a title="Previous" class="fancybox-item fancybox-nav fancybox-prev" href="javascript:;" data-fancybox-prev><span></span></a><a title="Next" class="fancybox-item fancybox-nav fancybox-next" href="javascript:;" data-fancybox-next><span></span></a>').appendTo( slide.$content );
-                    }
-                    });
-                });
-        </script>
-    </body>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-trigger').dropdown();
+            $('[data-fancybox]').fancybox({
+                arrows: false,
+                loop: true,
+                toolbar: false,
+                //preventCaptionOverlap : false,
+                afterLoad: function (instance, slide) {
+                    $('<a title="Close" class="fancybox-item fancybox-close" href="javascript:;" data-fancybox-close></a><a title="Previous" class="fancybox-item fancybox-nav fancybox-prev" href="javascript:;" data-fancybox-prev><span></span></a><a title="Next" class="fancybox-item fancybox-nav fancybox-next" href="javascript:;" data-fancybox-next><span></span></a>').appendTo(slide.$content);
+                }
+            });
+        });
+    </script>
+</body>
+
 </html>

@@ -1,204 +1,246 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- load stylesheets-->
-        <link rel="stylesheet" href="../css/materialize.min.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-        <link rel="shortcut icon" href="../pics/banana.ico" />
-        <!-- page title -->
-        <title>Janana - Technik</title>
-    </head>
-    <!-- black background -->
-    <body class="black">
-        <!-- dropdown menu big screen -->
-        <ul id="dropdown1" class="dropdown-content blue2 white-text">
-            <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
-            <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
-            <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
-        </ul>
-        <!-- navbar responsive-->
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper blue">
-                    <div class="container">
-                        <a href="#" class="brand-logo">Technik</a>
-                        <a href="#" class="sidenav-trigger left" data-target="slide-out"><i class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown1">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
-                            <li><a href="technik.html" class="white-text">Technik</a></li>
-                            <li><a href="pflanzengallerie.html" class="white-text">Gallerie</a></li>
-                            <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
-                            <li><a href="../index.html" class="white-text"><i class="material-icons center white-text">home</i></a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- load stylesheets-->
+    <link rel="stylesheet" href="../css/materialize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="shortcut icon" href="../pics/banana.ico" />
+    <!-- page title -->
+    <title>Janana - Technik</title>
+</head>
+<!-- black background -->
+
+<body class="black">
+    <!-- dropdown menu big screen -->
+    <ul id="dropdown1" class="dropdown-content blue2 white-text">
+        <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
+        <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
+        <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
+    </ul>
+    <!-- navbar responsive-->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue">
+                <div class="container">
+                    <a href="#" class="brand-logo">Technik</a>
+                    <a href="#" class="sidenav-trigger left" data-target="slide-out"><i
+                            class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown1">Aquarien<i
+                                    class="material-icons right white-text">arrow_drop_down</i></a></li>
+                        <li><a href="technik.html" class="white-text">Technik</a></li>
+                        <li><a href="pflanzengallerie.html" class="white-text">Gallerie</a></li>
+                        <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
+                        <li><a href="../index.html" class="white-text"><i
+                                    class="material-icons center white-text">home</i></a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-        <!-- dropdown sidenav for small screens -->
-        <ul id="dropdown2" class="dropdown-content blue2 white-text">
-            <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
-            <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
-            <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
-        </ul>
-        <!-- sidenav for small screens -->
-        <ul class="sidenav blue" id="slide-out">
-            <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown2">Aquarien<i class="material-icons right white-text">arrow_drop_down</i></a></li>
-            <li><a href="technik.html" class="white-text">Technik</a></li>
-            <li><a href="pflanzengallerie.html " class="white-text">Gallerie</a></li>
-            <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
-            <li><a href="../index.html" class="white-text">Startseite<i class="material-icons center white-text">home</i></a></li>
-        </ul>
-        <!-- content starts here -->
-        <div class="container white-text center-align technik-container">
-            <div class="technik">
-                <img src="../pics/aquarium_shem.png" class="responsive-img"/>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-1">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Technik Allgemein</h5>
-                        <p class="technik-p">Die verbaute Technik ist elementar für den Aufbau des eigenen Ökosystems. Sie beeinflusst Pflanzenwachstum, sorgt für sauberes und ungiftiges Wasser und setzt das Aquarium ins richtige Licht.</p>
-                    </div>
+            </div>
+        </nav>
+    </div>
+    <!-- dropdown sidenav for small screens -->
+    <ul id="dropdown2" class="dropdown-content blue2 white-text">
+        <li><a href="aquarium1.html" class="white-text">54l Aquarium</a></li>
+        <li><a href="aquarium2.html" class="white-text">180l Aquarium</a></li>
+        <li><a href="aquarium3.html" class="white-text">12l Aquarium</a></li>
+    </ul>
+    <!-- sidenav for small screens -->
+    <ul class="sidenav blue" id="slide-out">
+        <li><a href="#" class="dropdown-trigger white-text" data-target="dropdown2">Aquarien<i
+                    class="material-icons right white-text">arrow_drop_down</i></a></li>
+        <li><a href="technik.html" class="white-text">Technik</a></li>
+        <li><a href="pflanzengallerie.html " class="white-text">Gallerie</a></li>
+        <li><a href="bewertung.php" class="white-text">Bewerten!</a></li>
+        <li><a href="../index.html" class="white-text">Startseite<i
+                    class="material-icons center white-text">home</i></a></li>
+    </ul>
+    <!-- content starts here -->
+    <div class="container white-text center-align technik-container">
+        <div class="technik">
+            <img src="../pics/aquarium_shem.png" class="responsive-img" />
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-1">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Technik Allgemein</h5>
+                    <p class="technik-p">Die verbaute Technik ist elementar für den Aufbau des eigenen Ökosystems. Sie
+                        beeinflusst Pflanzenwachstum, sorgt für sauberes und ungiftiges Wasser und setzt das Aquarium
+                        ins richtige Licht.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-2">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Heizer</h5>
-                        <p class="technik-p">Viele Fische und Pflanzen brauchen eine andere Temperatur, als Wasser für gewöhnlich bei uns hat. Daher muss das Wasser präzise aufgeheizt werden.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-2">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Heizer</h5>
+                    <p class="technik-p">Viele Fische und Pflanzen brauchen eine andere Temperatur, als Wasser für
+                        gewöhnlich bei uns hat. Daher muss das Wasser präzise aufgeheizt werden.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-3">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Außenfilter</h5>
-                        <p class="technik-p">Ein Außenfilter eignet sich gut für große Becken. Er steht außerhalb des Beckens und er bietet wohl die beste Filterung. Durch verschiedene Filtermedien in Filterkörben wird das Wasser mechanisch, chemisch und biologisch gefiltert. Das Wasser muss mit Einzug und Ausströmer transportiert werden.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-3">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Außenfilter</h5>
+                    <p class="technik-p">Ein Außenfilter eignet sich gut für große Becken. Er steht außerhalb des
+                        Beckens und er bietet wohl die beste Filterung. Durch verschiedene Filtermedien in Filterkörben
+                        wird das Wasser mechanisch, chemisch und biologisch gefiltert. Das Wasser muss mit Einzug und
+                        Ausströmer transportiert werden.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-4">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Innenfilter</h5>
-                        <p class="technik-p">Innenfilter gibt es für beinahe alle Beckengrößen. Innenfilter werden innerhalb des Beckens eingebaut. Dadurch entfällt die Notwendigkeit eines Einzugs/Ausströmers. Je nach Größe und Qualität sind diese mit weniger Filtermedien ausgestattet. Für die meisten Becken dennoch ausreichend.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-4">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Innenfilter</h5>
+                    <p class="technik-p">Innenfilter gibt es für beinahe alle Beckengrößen. Innenfilter werden innerhalb
+                        des Beckens eingebaut. Dadurch entfällt die Notwendigkeit eines Einzugs/Ausströmers. Je nach
+                        Größe und Qualität sind diese mit weniger Filtermedien ausgestattet. Für die meisten Becken
+                        dennoch ausreichend.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-5">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Rucksackfilter</h5>
-                        <p class="technik-p">Ein Rucksackfilter eignet sich beinahe ausschließlich für offene Becken. Er wird auf dem Rand angebracht, hat einen Ausströmer und einen Einzug im Becken und Filtermaterialen außerhalb des Beckens. Auch hier können verschiedene Filtermedien verbaut werden.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-5">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Rucksackfilter</h5>
+                    <p class="technik-p">Ein Rucksackfilter eignet sich beinahe ausschließlich für offene Becken. Er
+                        wird auf dem Rand angebracht, hat einen Ausströmer und einen Einzug im Becken und
+                        Filtermaterialen außerhalb des Beckens. Auch hier können verschiedene Filtermedien verbaut
+                        werden.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-6">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Exk.: Stickstoffkreislauf 1</h5>
-                        <p class="technik-p">Das Filtern des Wassers ist nicht ausschließlich wichtig für klares Wasser ohne Pflanzenreste. Es hat einen elementaren Anteil am sogenannten Stickstoffkreislauf. Da bestimmte Stickstoffabfallprodukte schon in geringer Konzentration giftig für Tiere ist sind, sind im Filter befindliche Bakterien entscheidend für die dauerhafte Gesundheit der Tiere.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-6">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Exk.: Stickstoffkreislauf 1</h5>
+                    <p class="technik-p">Das Filtern des Wassers ist nicht ausschließlich wichtig für klares Wasser ohne
+                        Pflanzenreste. Es hat einen elementaren Anteil am sogenannten Stickstoffkreislauf. Da bestimmte
+                        Stickstoffabfallprodukte schon in geringer Konzentration giftig für Tiere ist sind, sind im
+                        Filter befindliche Bakterien entscheidend für die dauerhafte Gesundheit der Tiere.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-7">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Exk.: Stickstoffkreislauf 2</h5>
-                        <p class="technik-p">Ausscheidungen der Tiere, Pflanzenreste, verstorbene Tiere oder Schuppen bringen Ammonium ins Wasser. Dieses wird durch Bakterien namens Nitrosomas in Nitit umgewandelt. Nitrit ist bereits in geringen Dosen tödlich für Fische. Deshalb wird dieses durch einen weiteren Bakterienstamm namens Nitrospira in Nitrat umgewandelt. Nitrat wiederum ist Bestandteil der meisten Dünger und daher in normaler Konzentration ungiftig.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-7">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Exk.: Stickstoffkreislauf 2</h5>
+                    <p class="technik-p">Ausscheidungen der Tiere, Pflanzenreste, verstorbene Tiere oder Schuppen
+                        bringen Ammonium ins Wasser. Dieses wird durch Bakterien namens Nitrosomas in Nitit umgewandelt.
+                        Nitrit ist bereits in geringen Dosen tödlich für Fische. Deshalb wird dieses durch einen
+                        weiteren Bakterienstamm namens Nitrospira in Nitrat umgewandelt. Nitrat wiederum ist Bestandteil
+                        der meisten Dünger und daher in normaler Konzentration ungiftig.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-8">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Ausströmer</h5>
-                        <p class="technik-p">Ein Außenfilter steht außerhalb des Aquariums, daher muss das Wasser aus dem Becken in den Filter transportiert werden bzw wieder herraus. Aus dem Filter kommend tritt das Wasser über den Ausströmer wieder in das Becken ein.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-8">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Ausströmer</h5>
+                    <p class="technik-p">Ein Außenfilter steht außerhalb des Aquariums, daher muss das Wasser aus dem
+                        Becken in den Filter transportiert werden bzw wieder herraus. Aus dem Filter kommend tritt das
+                        Wasser über den Ausströmer wieder in das Becken ein.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-9">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Einzug</h5>
-                        <p class="technik-p">Ein Außenfilter steht außerhalb des Aquariums, daher muss das Wasser aus dem Becken in den Filter transportiert werden bzw wieder herraus. Über den Einzug pumpt der Filter das Wasser aus dem Becken, damit es dann durch den Filterkreislauf wandern kann.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-9">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Einzug</h5>
+                    <p class="technik-p">Ein Außenfilter steht außerhalb des Aquariums, daher muss das Wasser aus dem
+                        Becken in den Filter transportiert werden bzw wieder herraus. Über den Einzug pumpt der Filter
+                        das Wasser aus dem Becken, damit es dann durch den Filterkreislauf wandern kann.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-10">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Beleuchtung</h5>
-                        <p class="technik-p">Damit man sein Aquarium ins rechte Licht rückt, benötigt man Beleuchtung. Obwohl es auch andere Leuchtmittel gibt, ist heute LED der Standard. Bei der Planung seines Beckens sollte man darauf achten, dass die Beleuchtung ausreichend Lumen liefert, damit die eingesetzten Pflanzen auch genug Licht bekommen.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-10">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Beleuchtung</h5>
+                    <p class="technik-p">Damit man sein Aquarium ins rechte Licht rückt, benötigt man Beleuchtung.
+                        Obwohl es auch andere Leuchtmittel gibt, ist heute LED der Standard. Bei der Planung seines
+                        Beckens sollte man darauf achten, dass die Beleuchtung ausreichend Lumen liefert, damit die
+                        eingesetzten Pflanzen auch genug Licht bekommen.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-11">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">CO² Anlage</h5>
-                        <p class="technik-p">Alle Pflanzen brauchen für ihr Wachstum CO². Einigen reicht das CO² durch die Umstehende Luft dem Wasser zukommt. Besondere Pflanzen benötigen mehr. Dann hilft eine CO² Anlage. Hier wird eine Druckflasche über einen Druckminderer dosiert und das CO² gleichmäßig ins Becken geströmt.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-11">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">CO² Anlage</h5>
+                    <p class="technik-p">Alle Pflanzen brauchen für ihr Wachstum CO². Einigen reicht das CO² durch die
+                        Umstehende Luft dem Wasser zukommt. Besondere Pflanzen benötigen mehr. Dann hilft eine CO²
+                        Anlage. Hier wird eine Druckflasche über einen Druckminderer dosiert und das CO² gleichmäßig ins
+                        Becken geströmt.</p>
                 </div>
-                <div class="action-btn">
-                    <a class="btn-floating btn-small blue technik-btn-12">
-                      <i class="large material-icons resp-icon">info_outline</i>
-                    </a>
-                    <div class="technik-text left-align">
-                        <h5 class="technik-p">Diffusor</h5>
-                        <p class="technik-p">Das CO² aus der CO² Anlage wird über einen Diffusor zerstäubt, um eine gleichmäßigere Verteilung im Becken zu erreichen.</p>
-                    </div>
+            </div>
+            <div class="action-btn">
+                <a class="btn-floating btn-small blue technik-btn-12">
+                    <i class="large material-icons resp-icon">info_outline</i>
+                </a>
+                <div class="technik-text left-align">
+                    <h5 class="technik-p">Diffusor</h5>
+                    <p class="technik-p">Das CO² aus der CO² Anlage wird über einen Diffusor zerstäubt, um eine
+                        gleichmäßigere Verteilung im Becken zu erreichen.</p>
                 </div>
             </div>
         </div>
-        <!-- Footer / Impressum -->
-        <footer class="page-footer page-footer-fixed blue">
-            <div class="container">
-              <div class="row">
+    </div>
+    <!-- Footer / Impressum -->
+    <footer class="page-footer page-footer-fixed blue">
+        <div class="container">
+            <div class="row">
                 <div class="col l12 s12">
-                  <h2 class="white-text footer-1">Janana</h2>
-                  <p class="grey-text text-lighten-4"><h5 class="footer-1">Diese Webseite ist im Zusammenhang einer Projektarbeit HTML CSS im Rahmen einer Ausbildung zum Fachinformatiker / Anwendungsentwickler entstanden</h5></p>
+                    <h2 class="white-text footer-1">Janana</h2>
+                    <p class="grey-text text-lighten-4">
+                    <h5 class="footer-1">Diese Webseite ist im Zusammenhang einer Projektarbeit HTML CSS im Rahmen einer
+                        Ausbildung zum Fachinformatiker / Anwendungsentwickler entstanden</h5>
+                    </p>
                 </div>
-              </div>
             </div>
-            <div class="footer-copyright">
-              <div class="container">
-              © 2021 Jan Ihmels, Hellerweg 51, 73728 Esslingen &nbsp;&nbsp;| &nbsp;&nbsp; enstanden für das Berufsförderwerk Schömberg, Steinbeisstraße 30, 71272 Renningen
-              <a class="grey-text text-lighten-4 right" href="https://www.bfw-schoemberg.de">BfW Schömberg</a>
-              </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Jan Ihmels, Hellerweg 51, 73728 Esslingen &nbsp;&nbsp;| &nbsp;&nbsp; enstanden für das
+                Berufsförderwerk Schömberg, Steinbeisstraße 30, 71272 Renningen
+                <a class="grey-text text-lighten-4 right" href="https://www.bfw-schoemberg.de">BfW Schömberg</a>
             </div>
-          </footer>
-        
-        <!-- javascript starts here -->
-        <script src="../js/jquery-3.6.0.js"></script>
-        <script src="../js/materialize.js"></script>
-        <script>
-            const slide_menu = document.querySelectorAll(".sidenav");
-            M.Sidenav.init(slide_menu, {});
-        </script>
-        <script>
-            $(document).ready(function(){
-                $('.dropdown-trigger').dropdown();
-                $('.fixed-action-btn').floatingActionButton();
-               });
-        </script>
-    </body>
+        </div>
+    </footer>
+
+    <!-- javascript starts here -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script>
+        const slide_menu = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(slide_menu, {});
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-trigger').dropdown();
+            $('.fixed-action-btn').floatingActionButton();
+        });
+    </script>
+</body>
+
 </html>

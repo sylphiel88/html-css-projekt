@@ -385,6 +385,10 @@ h2.footer-1 {
   font-size: 1.5em;
 }
 
+.weißer-text {
+  color: white;
+}
+
 @media(min-width: 35em) {
   .bl-sm {
     font-size: 1em; /* Auf größeren Geräten lässt sich die Überschrift des 180l Aquariums normal darstellen */
