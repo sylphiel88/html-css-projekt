@@ -304,6 +304,22 @@ h5.footer-1 {
 h2.footer-1 {
   font-size: 1.3em
 }
+
+.logos {
+  display: inline-block;
+  height: 1em;
+  margin-right: 1em;
+  width: auto;
+  float: left;
+}
+
+.logo-text {
+  display: inline-block;
+  color:rgb(255, 255, 255);
+  line-height: normal;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
 @media(min-width: 35em) {
   .bl-sm {
     font-size: 1em;

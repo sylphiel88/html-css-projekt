@@ -246,7 +246,7 @@
             $eintragen = mysqli_query($db2, $eintrag);
             mysqli_close($db2);
             $db2=null;
-            $db3 = mysqli_connect("localhost", "pi", "ircilv", "mysql");
+            $db3 = mysqli_connect("localhost", $usern, $passwd, $database);
             if(!$db3) {
                 exit("Verbindungsfehler: ".mysqli_connect_error());
             };
