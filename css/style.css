@@ -451,12 +451,7 @@ h2.footer-1 {
 @media(min-width: 80em) {
   .cardtextsize { /*noch größerer Kartentext */
     font-size: 2.15em;
-  }
-  .gallery a {
-    width: 24%;
-    float: left;
-    margin: 2px;
-  }  
+  } 
 }
 @media(min-width: 93em) { /*Die Technik Infoboxen gehen bei ausreichender Breite statt innerhalb der Schematischen Darstellung nach Rechts davon */
   .technik-text {
