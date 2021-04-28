@@ -78,21 +78,6 @@ input[type=range]+.thumb{
   width: 50%;
 }
 
-.gallery {      /* Gallery Breite*/
-  width : 80%;
-  margin: 0 auto;
-}
-
-.gallery a img { /* Bei kleinen Bildschirmen 1 Bild / Zeile */
-  width: 100%;
-}
-
-.gallery a {
-  width: 100%;
-  float: left;
-  overflow: hidden;
-  border: none;
-}
 .fancybox-nav {       /* Design auf die fancybox übertragen */
   position: absolute;
   top: 0;
@@ -187,6 +172,20 @@ input[type=range]+.thumb{
    height: 140vh !important;
 }
 
+.gallery {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery a {
+  width: 100%;
+  height: auto;
+  float: left;
+  overflow: hidden;
+}
+.gallery a img {
+  width: 100%;
+}
 
 .technik-text {  /* Textboxen der Hover Informationen */
   background-color: rgb(0, 155, 226);
@@ -406,12 +405,10 @@ h2.footer-1 {
     width: 20px !important;
     height: 20px !important;
   }
+
   .gallery a {
-    width: 20vh;
-    height: 20vh;
-    float: left;
-    overflow: hidden;
-  }  
+    width: 49%;
+  }
 }
 
 @media(min-width: 50em) {
@@ -448,9 +445,6 @@ h2.footer-1 {
   }
   .gallery a {
     width: 32%;
-    height: auto;
-    float: left;
-    overflow: hidden;
   }  
 }
 
