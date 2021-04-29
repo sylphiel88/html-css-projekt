@@ -227,6 +227,7 @@
                 form.append("rating3", rating3);
                 form.append("msg", msg);
                 fetch('bewertung.php', {method: 'POST', body: form});
+                window.alert("Vielen Dank für Ihre Bewertung");
             });
         </script>
         <!-- and php part plus write data in mysql -->
